@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://jakarta.ee/xml/ns/jakartaee"
+	xmlns:web="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+	version="5.0">
+	<servlet>
+		<description>Login Servlet</description>
+		<display-name>Login</display-name>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>swathi.lac.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>Logout Servlet</description>
+		<display-name>Logout</display-name>
+		<servlet-name>Logout</servlet-name>
+		<servlet-class>swathi.lac.Logout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/Logout</url-pattern>
+	</servlet-mapping>	
+	<servlet>
+		<description>ManageClass Servlet</description>
+		<display-name>ManageClass</display-name>
+		<servlet-name>ManageClass</servlet-name>
+		<servlet-class>swathi.lac.ManageClass</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManageClass</servlet-name>
+		<url-pattern>/ManageClass</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LoadClassData</servlet-name>
+		<servlet-class>swathi.lac.ManageClass</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoadClassData</servlet-name>
+		<url-pattern>/LoadClassData</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>ManageTeacher Servlet</description>
+		<display-name>ManageTeacher</display-name>
+		<servlet-name>ManageTeacher</servlet-name>
+		<servlet-class>swathi.lac.ManageTeacher</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManageTeacher</servlet-name>
+		<url-pattern>/ManageTeacher</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>LoadTeacherData Servlet</description>
+		<display-name>LoadTeacherData</display-name>
+		<servlet-name>LoadTeacherData</servlet-name>
+		<servlet-class>swathi.lac.ManageTeacher</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoadTeacherData</servlet-name>
+		<url-pattern>/LoadTeacherData</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>ManageSubject Servlet</description>
+		<display-name>ManageSubject</display-name>
+		<servlet-name>ManageSubject</servlet-name>
+		<servlet-class>swathi.lac.ManageSubject</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManageSubject</servlet-name>
+		<url-pattern>/ManageSubject</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>LoadSubjectData Servlet</description>
+		<display-name>LoadSubjectData</display-name>
+		<servlet-name>LoadSubjectData</servlet-name>
+		<servlet-class>swathi.lac.ManageSubject</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoadSubjectData</servlet-name>
+		<url-pattern>/LoadSubjectData</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>ManageStudent Servlet</description>
+		<display-name>ManageStudent</display-name>
+		<servlet-name>ManageStudent</servlet-name>
+		<servlet-class>swathi.lac.ManageStudent</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManageStudent</servlet-name>
+		<url-pattern>/ManageStudent</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>LoadStudentData Servlet</description>
+		<display-name>LoadStudentData</display-name>
+		<servlet-name>LoadStudentData</servlet-name>
+		<servlet-class>swathi.lac.ManageStudent</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoadStudentData</servlet-name>
+		<url-pattern>/LoadStudentData</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>AssignClassSubject Servlet</description>
+		<display-name>AssignClassSubject</display-name>
+		<servlet-name>AssignClassSubject</servlet-name>
+		<servlet-class>swathi.lac.AssignClassSubject</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AssignClassSubject</servlet-name>
+		<url-pattern>/AssignClassSubject</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>LoadClassSubjectData Servlet</description>
+		<display-name>LoadClassSubjectData</display-name>
+		<servlet-name>LoadClassSubjectData</servlet-name>
+		<servlet-class>swathi.lac.AssignClassSubject</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoadClassSubjectData</servlet-name>
+		<url-pattern>/LoadClassSubjectData</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>AssignClassSubjectTeacher Servlet</description>
+		<display-name>AssignClassSubjectTeacher</display-name>
+		<servlet-name>AssignClassSubjectTeacher</servlet-name>
+		<servlet-class>swathi.lac.AssignClassSubjectTeacher</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AssignClassSubjectTeacher</servlet-name>
+		<url-pattern>/AssignClassSubjectTeacher</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>LoadClassSubjectTeacherData Servlet</description>
+		<display-name>LoadClassSubjectTeacherData</display-name>
+		<servlet-name>LoadClassSubjectTeacherData</servlet-name>
+		<servlet-class>swathi.lac.AssignClassSubjectTeacher</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoadClassSubjectTeacherData</servlet-name>
+		<url-pattern>/LoadClassSubjectTeacherData</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>LoadStudentReport Servlet</description>
+		<display-name>LoadStudentReport</display-name>
+		<servlet-name>LoadStudentReport</servlet-name>
+		<servlet-class>swathi.lac.StudentReport</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoadStudentReport</servlet-name>
+		<url-pattern>/LoadStudentReport</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>LoadClassReport Servlet</description>
+		<display-name>LoadClassReport</display-name>
+		<servlet-name>LoadClassReport</servlet-name>
+		<servlet-class>swathi.lac.ClassReport</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoadClassReport</servlet-name>
+		<url-pattern>/LoadClassReport</url-pattern>
+	</servlet-mapping>
+	<display-name>LearnerAcademy</display-name>
+	<resource-ref>
+	    <description>JDBC Connection Pool</description>
+	    <res-ref-name>jdbc/LAC</res-ref-name>
+	    <res-type>javax.sql.DataSource</res-type>
+	    <res-auth>Container</res-auth>
+  	</resource-ref>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
